@@ -1,0 +1,131 @@
+#,Category,Feature,Version,Version source,Differentiator,Tier,Status,Doc #,Pro scope
+1,Core download engine,Multi-connection segmented downloads,v0.1,Roadmap,,Free,Planned,1,
+2,Core download engine,"Pause, resume, and resume after crash, reboot or sleep",v0.1,Roadmap,,Free,Planned,2,
+3,Core download engine,HTTP/HTTPS and FTP/SFTP,v0.1,Best fit,,Free,Planned,3,
+4,Core download engine,"BitTorrent, magnet links and Metalink",v2.0,Best fit,,Free,Planned,93,
+5,Core download engine,Mirror and CDN failover mid-download,v2.0,Roadmap,,Free,Planned,92,
+6,Core download engine,"Integrity checks (checksums, partial-file repair)",v0.5,Best fit,,Free,Planned,28,
+7,Core download engine,"Download into archives, or auto-extract (zip, rar, 7z)",v0.5,Best fit,,Free,Planned,29,
+8,Core download engine,"Proxy, SOCKS and VPN support (incl. per download)",v0.5,Best fit,,Free,Planned,30,
+9,Core download engine,"Authentication: cookies, headers, browser cookie import",v0.1,Best fit,,Free,Planned,4,
+10,Core download engine,"Rate limiting per download, per site or globally",v0.5,Roadmap,,Free,Planned,31,
+11,Core download engine,Duplicate detection before downloading,v0.5,Roadmap,,Free,Planned,32,
+12,Core download engine,Own Rust segmented downloader (replaces aria2),v0.5,Roadmap,,Free,Planned,33,
+13,Media extraction,Video and audio from thousands of sites (yt-dlp),v0.1,Roadmap,,Free,Planned,5,
+14,Media extraction,"Playlist, channel and profile downloads",v0.1,Best fit,,Free,Planned,6,
+15,Media extraction,Quality and format picker with size estimates,v0.1,Roadmap,,Free,Planned,7,
+16,Media extraction,"Clip downloads (time ranges, chapters)",v0.1,Roadmap,yes,Free,Planned,8,
+17,Media extraction,"Audio-only extraction (MP3, M4A, Opus)",v0.1,Best fit,,Free,Planned,9,
+18,Media extraction,Subtitles: download and embed,v0.5,Best fit,,Free,Planned,34,
+19,Media extraction,"Thumbnails, metadata and chapters embedded",v0.5,Best fit,,Free,Planned,35,
+20,Media extraction,"Livestream recording, incl. scheduled",v2.0,Best fit,,Pro,Planned,94,Desktop
+21,Media extraction,Image gallery downloads (gallery-dl),v2.0,Best fit,,Free,Planned,95,
+22,Media extraction,SponsorBlock segment removal,v0.5,Best fit,,Free,Planned,36,
+23,Media extraction,Background auto-updating of extractors,v0.1,Roadmap,,Free,Planned,10,
+24,Browser integration,Chrome and Firefox extensions,v0.1,Roadmap,,Free,Planned,11,
+25,Browser integration,Edge and Brave extensions,v0.5,Roadmap,,Free,Planned,37,
+26,Browser integration,Safari extension,v3.0,Roadmap,,Free,Planned,105,
+27,Browser integration,Automatic interception of downloads,v0.1,Roadmap,,Free,Planned,12,
+28,Browser integration,Media detection overlay button,v0.1,Roadmap,,Free,Planned,13,
+29,Browser integration,Right-click 'download with app' / 'download all links',v0.1,Best fit,,Free,Planned,14,
+30,Browser integration,Batch link grabber with filters,v0.5,Best fit,,Free,Planned,38,
+31,Browser integration,Login/session passthrough via native messaging,v0.1,Roadmap,,Free,Planned,15,
+32,Queue and scheduling,Multiple queues with priorities,v0.1,Roadmap,,Free,Planned,16,
+33,Queue and scheduling,Drag-and-drop reordering,v0.1,Best fit,,Free,Planned,17,
+34,Queue and scheduling,Time-window scheduling,v0.5,Roadmap,,Free,Planned,39,
+35,Queue and scheduling,"Start, stop or shut down after queue finishes",v0.5,Best fit,,Free,Planned,40,
+36,Queue and scheduling,Concurrency limits per queue,v0.1,Roadmap,,Free,Planned,18,
+37,Queue and scheduling,Dependency chains (download B after A),Later,Best fit,,Pro,Planned,124,Desktop
+38,Network intelligence,Polite mode (auto-throttle when network is busy),v2.0,Roadmap,yes,Pro,Planned,87,Desktop
+39,Network intelligence,Adaptive connection count per server,v0.5,Best fit,,Free,Planned,41,
+40,Network intelligence,Network-change handling (Wi-Fi/mobile/VPN),v0.5,Best fit,,Free,Planned,42,
+41,Network intelligence,Per-network rules (e.g. pause on hotel Wi-Fi),v2.0,Best fit,,Pro,Planned,88,Desktop
+42,Network intelligence,Speed tests and diagnostics,Later,Best fit,,Free,Planned,125,
+43,Metered and data-aware mode,Metered connection detection,v2.0,Roadmap,yes,Free,Planned,81,
+44,Metered and data-aware mode,Size and cost preview in user's currency,v2.0,Roadmap,yes,Free,Planned,82,
+45,Metered and data-aware mode,"Daily, weekly and monthly data budgets",v2.0,Roadmap,,Pro,Planned,83,Desktop
+46,Metered and data-aware mode,Wait-for-Wi-Fi or off-peak rules,v2.0,Roadmap,,Pro,Planned,84,Desktop
+47,Metered and data-aware mode,Lower quality automatically on metered connections,v2.0,Best fit,,Pro,Planned,85,Desktop
+48,Metered and data-aware mode,Data usage reports,v2.0,Best fit,,Pro,Planned,86,Desktop
+49,Power and resilience,"Power-aware scheduling (battery, UPS)",v2.0,Roadmap,,Pro,Planned,89,Desktop
+50,Power and resilience,Outage schedule plugins (e.g. load shedding),v2.0,Roadmap,yes,Pro,Planned,90,Desktop
+51,Power and resilience,Safe pause before low battery or planned outage,v2.0,Roadmap,,Pro,Planned,91,Desktop
+52,Power and resilience,Prevent sleep while downloading,v0.1,Best fit,,Free,Planned,19,
+53,Power and resilience,Crash-proof state saving,v0.1,Best fit,,Free,Planned,20,
+54,Automation,"Rules engine (match → format, folder, rename)",v0.5,Roadmap,yes,Pro,Planned,43,Desktop
+55,Automation,"Subscriptions: channels, playlists, podcasts, RSS",v0.5,Roadmap,,Pro,Planned,44,Desktop
+56,Automation,Watch folders,Later,Best fit,,Pro,Planned,126,Desktop
+57,Automation,Clipboard monitoring,v0.5,Best fit,,Free,Planned,45,
+58,Automation,"Post-download actions (convert, move, unzip, script, upload)",v0.5,Best fit,,Pro,Planned,46,Desktop
+59,Automation,Webhooks and Zapier/n8n integration,v4.0,Roadmap,,Pro,Planned,108,Desktop
+60,Automation,Scriptable hooks (JS or Python),v4.0,Best fit,,Pro,Planned,109,Desktop
+61,Library management,"Download history (search, open file, open folder)",v0.1,Roadmap,,Free,Planned,27a,
+62,Library management,"Auto-organize by type, site, date or rules",v0.5,Roadmap,,Free,Planned,47,
+63,Library management,Smart renaming templates,v0.5,Roadmap,,Free,Planned,48,
+64,Library management,Deduplication across library,v0.5,Roadmap,,Free,Planned,49,
+65,Library management,"Tags, collections and favourites",v1.0,Best fit,,Free,Planned,66,
+66,Library management,Built-in media player and previews,v1.0,Roadmap,,Free,Planned,67,
+67,Library management,Watched/unwatched and progress tracking,v1.0,Best fit,,Free,Planned,68,
+68,Library management,Storage analytics and cleanup suggestions,Later,Best fit,,Pro,Planned,127,Desktop
+69,Search and AI,Local transcription (Whisper),v1.0,Roadmap,yes,Pro,Planned,59,Desktop
+70,Search and AI,Full-text search across transcripts and documents,v1.0,Roadmap,yes,Pro,Planned,60,Desktop
+71,Search and AI,Jump to moment in video from search,v1.0,Roadmap,yes,Pro,Planned,61,Desktop
+72,Search and AI,"AI summaries, chapters and key points",v3.0,Roadmap,,Pro,Planned,99,Desktop
+73,Search and AI,Semantic search,v3.0,Roadmap,,Pro,Planned,100,Desktop
+74,Search and AI,Auto-tagging and categorization,v3.0,Roadmap,,Pro,Planned,101,Desktop
+75,Search and AI,Natural-language commands,v3.0,Roadmap,,Pro,Planned,102,Desktop
+76,Search and AI,Text extraction and search in PDFs (incl. OCR),v3.0,Roadmap,,Pro,Planned,103,Desktop
+77,Search and AI,Subtitle generation and translation,v3.0,Roadmap,,Pro,Planned,104,Desktop
+78,Multi-device and remote,Desktop: Windows and macOS,v0.1,Roadmap,,Free,Planned,23,
+79,Multi-device and remote,Desktop: Linux,v0.5,Roadmap,,Free,Planned,50,
+80,Multi-device and remote,Mobile share-target / remote app,v1.0,Roadmap,,Free,Planned,62,
+81,Multi-device and remote,"Send from phone, download at home",v1.0,Roadmap,yes,Pro,Planned,63,Cloud (free if self-hosted)
+82,Multi-device and remote,"Full mobile app (queue, library, streaming)",v2.0,Roadmap,,Pro,Planned,76,Cloud (free if self-hosted)
+83,Multi-device and remote,Web dashboard,v2.0,Roadmap,,Pro,Planned,75,Cloud (free if self-hosted)
+84,Multi-device and remote,"Headless/server mode (Docker, NAS, Pi, VPS)",v2.0,Roadmap,,Free,Planned,74,
+85,Multi-device and remote,"Synced queue, history and settings",v2.0,Roadmap,,Pro,Planned,77,Cloud (free if self-hosted)
+86,Multi-device and remote,"Download to cloud storage (Drive, OneDrive, S3, Dropbox)",v2.0,Roadmap,,Pro,Planned,78,Desktop
+87,Sharing and collaboration,"LAN sharing (download once, share locally)",v2.0,Roadmap,yes,Pro,Planned,79,Desktop
+88,Sharing and collaboration,Shared queues for households and teams,v4.0,Roadmap,,Team,Planned,114,
+89,Sharing and collaboration,Per-user limits and permissions,v4.0,Roadmap,,Team,Planned,115,
+90,Sharing and collaboration,Share links to downloaded files,Later,Best fit,,Pro,Planned,128,Cloud (free if self-hosted)
+91,Sharing and collaboration,Shared libraries and collections,v4.0,Best fit,,Team,Planned,116,
+92,Security and privacy,Malware hash checks for executables,v1.0,Best fit,,Free,Planned,71,
+93,Security and privacy,Automatic checksum and signature verification,v0.5,Best fit,,Free,Planned,51,
+94,Security and privacy,Sandboxed handling of downloaded files,v0.1,Roadmap,,Free,Planned,21,
+95,Security and privacy,No telemetry by default; open source/open core,v0.1,Roadmap,yes,Free,Planned,22,
+96,Security and privacy,End-to-end encrypted sync and relay,v1.0,Roadmap,,Pro,Planned,64,Cloud (free if self-hosted)
+97,Security and privacy,Self-hosting option,v2.0,Best fit,,Free,Planned,80,
+98,Security and privacy,Private mode (no history),v0.5,Best fit,,Free,Planned,52,
+99,Security and privacy,Password-protected or locked folders,Later,Best fit,,Pro,Planned,129,Desktop
+100,UX and UI,Modern UI with light and dark themes,v0.1,Roadmap,,Free,Planned,24,
+101,UX and UI,Minimal mode and power-user mode,v0.5,Best fit,,Free,Planned,53,
+102,UX and UI,Plain-language errors with one-click fixes,v0.5,Roadmap,yes,Free,Planned,54,
+103,UX and UI,Command palette and keyboard shortcuts,v0.5,Best fit,,Free,Planned,55,
+104,UX and UI,Mini floating progress widget,v0.5,Best fit,,Free,Planned,56,
+105,UX and UI,Onboarding with sensible defaults,v1.0,Best fit,,Free,Planned,72,
+106,UX and UI,Undo for deletes and moves,v0.5,Best fit,,Free,Planned,57,
+107,Notifications,Desktop notifications,v0.1,Best fit,,Free,Planned,25,
+108,Notifications,Mobile push notifications,v1.0,Best fit,,Free,Planned,65,
+109,Notifications,"Completion, failure and budget alerts",v2.0,Best fit,,Free,Planned,96,
+110,Notifications,Daily digest of subscription downloads,v2.0,Best fit,,Pro,Planned,97,Cloud (free if self-hosted)
+111,Notifications,"Telegram, Discord or email notifications",v4.0,Best fit,,Pro,Planned,113,Desktop
+112,Integrations and developer,CLI tool,v4.0,Roadmap,,Free,Planned,106,
+113,Integrations and developer,Public REST/WebSocket API,v4.0,Roadmap,,Pro,Planned,107,Desktop
+114,Integrations and developer,Plugin marketplace (WebAssembly),v4.0,Roadmap,,Free,Planned,110,
+115,Integrations and developer,"Plex, Jellyfin, Emby, Calibre, Obsidian, Notion",v4.0,Roadmap,,Pro,Planned,111,Desktop
+116,Integrations and developer,"Import from IDM, JDownloader and FDM",v4.0,Roadmap,,Free,Planned,112,
+117,Accessibility and localization,Screen reader support and keyboard navigation,v0.1,Roadmap,,Free,Planned,26,
+118,Accessibility and localization,Adjustable font sizes and high-contrast mode,v0.1,Roadmap,,Free,Planned,27,
+119,Accessibility and localization,Community translations,v0.5,Best fit,,Free,Planned,58,
+120,Accessibility and localization,Right-to-left language support,v1.0,Best fit,,Free,Planned,73,
+121,Business and enterprise,Team and workspace management,v4.0,Roadmap,,Team,Planned,117,
+122,Business and enterprise,"Central policies (allowed sites, bandwidth caps)",v4.0,Roadmap,,Team,Planned,118,
+123,Business and enterprise,Audit logs,v4.0,Roadmap,,Team,Planned,119,
+124,Business and enterprise,SSO login,v4.0,Roadmap,,Team,Planned,120,
+125,Business and enterprise,"IT deployment tools (MSI, MDM)",v4.0,Roadmap,,Team,Planned,121,
+126,Monetization,Accounts and Pro tier,v1.0,Roadmap,,—,Planned,69,
+127,Monetization,One-time licence option,v1.0,Roadmap,,—,Planned,70,
+128,Monetization,"Cloud add-on (remote downloading, storage)",v2.0,Best fit,,—,Planned,98,
+129,Monetization,Team and enterprise plans,v4.0,Roadmap,,—,Planned,122,
+130,Monetization,Paid plugins in the marketplace,v4.0,Roadmap,,—,Planned,123,

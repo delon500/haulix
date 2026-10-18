@@ -1,0 +1,6 @@
+Version,Phase,Platforms added
+v0.1,Foundation (private alpha),Windows and macOS desktop; Chrome and Firefox extensions
+v0.5,Beta,+ Linux; + Edge and Brave extensions
+v1.0,Launch,+ Android and iOS share/remote apps; + cloud relay
+v2.0,Everywhere,"+ Docker, NAS, Raspberry Pi, VPS; + web dashboard; + full mobile apps"
+v3.0+,Intelligence and beyond,+ Safari extension; possibly the engine running on Android

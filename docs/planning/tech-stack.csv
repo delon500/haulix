@@ -1,0 +1,50 @@
+Layer,Component,Recommended,Alternative,Why,Runs on,First needed,Licence,Licence note
+Core engine,Language,Rust,Go,"Fast, memory-safe for untrusted network data, single small binary per OS",Engine (all platforms),v0.1,MIT / Apache-2.0,
+Core engine,Async runtime,Tokio,—,Standard Rust async runtime for networking and concurrency,Engine,v0.1,MIT,
+Core engine,HTTP client,reqwest,hyper (lower level),Mature HTTP/HTTPS client on Tokio,Engine,v0.1,MIT / Apache-2.0,
+Core engine,Local API server,Axum (REST + WebSocket),Actix Web,Serves the API every client talks to,Engine,v0.1,MIT,
+Core engine,Segmented downloads (start),aria2 sidecar,—,Proven speed; lets v0.1 ship fast,Engine,v0.1,GPL-2.0,"Run as a separate process, not linked into your code"
+Core engine,Segmented downloads (own),Custom Rust downloader,Keep aria2,"Enables polite mode, failover, metered logic",Engine,v0.5,Your licence,
+Core engine,Torrents,librqbit,libtorrent,Embeddable torrent support,Engine,v2.0,Apache-2.0 (verify),libtorrent is BSD if chosen instead
+Media,Media extraction,yt-dlp sidecar,—,"Thousands of sites, community-maintained",Engine,v0.1,Unlicense (public domain),Update separately from the app
+Media,Media processing,ffmpeg sidecar,—,"Merging, conversion, clipping",Engine,v0.1,LGPL-2.1 / GPL,Ship an LGPL build to keep licensing simple
+Media,Image galleries,gallery-dl sidecar,—,Better than yt-dlp for image sites,Engine,v2.0,GPL-2.0,Run as a separate process
+Data,Local database,SQLite,—,"Zero-config, local-first",Engine,v0.1,Public domain,
+Data,Full-text search,SQLite FTS5,Tantivy,Built into SQLite,Engine,v1.0,Public domain,
+Data,Vector / semantic search,sqlite-vec,LanceDB,Vector search inside the same database,Engine,v3.0,MIT / Apache-2.0,
+AI,Transcription,whisper.cpp (via whisper-rs),Faster-Whisper,"Offline, fast, uses GPU when available",Engine,v1.0,MIT,
+AI,Embeddings,Small local embedding model,Cloud embeddings API,Semantic search without sending data out,Engine,v3.0,Varies by model,Check each model's licence
+AI,Local LLM,llama.cpp,Ollama,Private summaries and commands,Engine,v3.0,MIT,Model weights have their own licences
+AI,Cloud LLM (opt-in Pro),Cloud LLM API,—,"Faster, higher-quality summaries for paying users",Your cloud,v3.0,Commercial API,Metered cost per request
+Desktop,App shell,Tauri 2,Flutter / Electron,"~10 MB installs, Rust-native, uses system webview","Windows, macOS, Linux",v0.1,MIT / Apache-2.0,Flutter is the main alternative (one UI for desktop + mobile)
+Frontend,UI framework,React + TypeScript,Flutter (Dart),Same UI serves desktop app and web dashboard,"Desktop, web",v0.1,MIT,
+Frontend,Styling,Tailwind CSS,—,"Fast, consistent styling","Desktop, web",v0.1,MIT,
+Frontend,Components,shadcn/ui,Radix UI directly,"Accessible, owned components","Desktop, web",v0.1,MIT,
+Frontend,Server state,TanStack Query,—,Caching and syncing with the engine API,"Desktop, web",v0.1,MIT,
+Frontend,Client state,Zustand,Redux Toolkit,Lightweight state,"Desktop, web",v0.1,MIT,
+Browser,Extension framework,WXT (TypeScript),Plasmo,"One codebase for Chrome, Firefox, Edge, Safari",Browsers,v0.1,MIT,
+Browser,Extension ↔ engine bridge,Native messaging,Local HTTP,"Passes links, cookies, headers securely",Browsers + engine,v0.1,—,
+Mobile,Mobile app,React Native (Expo),Flutter / native Kotlin + Swift,Reuses React skills; remote control and share target,"Android, iOS",v1.0,MIT,
+Plugins,Plugin runtime,Extism / Wasmtime (WebAssembly),"Lua, JS sandbox","Sandboxed, any language",Engine,v4.0,BSD-3 / Apache-2.0,
+Networking,LAN discovery,mDNS + local HTTP,—,Devices find each other automatically,Engine,v2.0,—,
+Cloud,Backend API,Rust (Axum),"Node/TypeScript (Hono, NestJS)",Shares code with engine; Node is faster to start,Your cloud,v1.0,MIT,
+Cloud,Database,PostgreSQL,—,"Accounts, licences, sync metadata",Your cloud,v1.0,PostgreSQL licence,
+Cloud,Cache / presence,Valkey (Redis-compatible),Redis,Presence and queues for the relay,Your cloud,v1.0,BSD-3,Redis licence changed in recent years; check before choosing it
+Cloud,Phone-to-home relay,"WebSocket relay, end-to-end encrypted",Peer-to-peer (WebRTC),Your servers never see links or files,Your cloud,v1.0,Your licence,
+Cloud,Auth,Clerk / Supabase Auth / Auth.js,Self-built,Fast to set up,Your cloud,v1.0,Varies,Clerk is paid above free tier
+Cloud,Payments,Paddle or Lemon Squeezy (merchant of record),Stripe + own tax handling,Handles VAT and sales tax worldwide,Your cloud,v1.0,Commercial,Takes a % of each sale
+Cloud,Hosting,Fly.io / Railway / Hetzner,AWS / GCP,Low cost; relay traffic is light,Your cloud,v1.0,Commercial,
+Operations,CI/CD,GitHub Actions,GitLab CI,Builds for every OS and chip,—,v0.1,Commercial (free tier),
+Operations,Code signing,Apple Developer + Windows signing certificate,—,Avoids antivirus and SmartScreen warnings,—,v0.5,Paid yearly,Essential for download managers
+Operations,App updates,Tauri updater,—,Built-in auto-updates,Desktop,v0.1,MIT,
+Operations,Crash reporting,Sentry (opt-in),GlitchTip (self-hosted),Find bugs without breaking the privacy promise,All,v0.5,Commercial / FSL,
+Operations,Server packaging,Docker (multi-arch),—,"Runs on NAS, Pi, VPS",Server,v2.0,Apache-2.0,
+Operations,Linux packaging,"AppImage, Flatpak, .deb, .rpm",Snap,Covers all major distros,Linux,v0.5,—,
+Version,Components,,,,,,,
+v0.1,18,,,,,,,
+v0.5,4,,,,,,,
+v1.0,10,,,,,,,
+v2.0,4,,,,,,,
+v3.0,4,,,,,,,
+v4.0,1,,,,,,,
+Total,41,,,,,,,

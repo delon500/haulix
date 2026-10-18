@@ -1,0 +1,28 @@
+# Private planning: pricing, business model, original spreadsheets. Never push.
+docs/private/
+
+# Rust
+/target/
+
+# Node
+node_modules/
+*.log
+
+# Build output
+apps/desktop/dist/
+apps/desktop/src-tauri/gen/
+apps/extension/.output/
+apps/extension/.wxt/
+
+# Editors and OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environment and Office lock files
+.env
+.env.*
+~$*

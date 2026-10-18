@@ -1,0 +1,18 @@
+Category,Platform,Role,Minimum version,Architecture,Distribution,Available from,Notes
+Desktop,Windows,Engine + desktop app,Windows 10 and 11,"x64, ARM64","Installer (signed), winget",v0.1,Biggest market; IDM's home turf. Needs WebView2.
+Desktop,macOS,Engine + desktop app,macOS 10.15 Catalina or later,"Apple Silicon, Intel","Universal build, Homebrew",v0.1,Needs Apple notarization.
+Desktop,Linux,Engine + desktop app,"Ubuntu 22.04+, Fedora, Debian, Arch","x64, ARM64","AppImage, Flatpak, .deb, .rpm",v0.5,Needs WebKitGTK 4.1; weakest webview.
+Server,Home server / spare PC,Engine only (headless),"Windows, macOS or Linux","x64, ARM64",Headless install,v2.0,Always-on engine controlled remotely.
+Server,"NAS (Synology, QNAP, Unraid, TrueNAS)",Engine only (headless),Docker-capable NAS,"x64, ARM64",Docker / native packages,v2.0,Popular always-on download box.
+Server,Raspberry Pi / ARM boards,Engine only (headless),64-bit Linux,ARM64,Docker / .deb,v2.0,"Cheap, low-power option."
+Server,VPS / cloud server,Engine only (headless),Linux,"x64, ARM64",Docker,v2.0,"Hetzner, DigitalOcean, AWS and similar."
+Server,Docker,Engine only (headless),Any Docker host,"x64, ARM64",Multi-arch image,v2.0,One image that runs anywhere.
+Mobile,Android,Remote control + share target (engine later),Android (current supported versions),ARM64,"Google Play (companion), APK / F-Droid (media features)",v1.0,Foreground services allow local engine later; Play policies limit media downloading.
+Mobile,iOS / iPadOS,Remote control + share target only,iOS (current supported versions),ARM64,App Store,v1.0,Background limits and App Store rules prevent running the engine.
+Browser,Chrome,Extension (hands links to engine),Current versions,—,Chrome Web Store,v0.1,Store bans YouTube downloaders; list as download-manager companion.
+Browser,Firefox,Extension (hands links to engine),Current versions,—,Firefox Add-ons,v0.1,
+Browser,Edge,Extension (hands links to engine),Current versions,—,Edge Add-ons,v0.5,
+Browser,Brave / Opera,Extension (hands links to engine),Current versions,—,Chrome Web Store / Opera Add-ons,v0.5,Chromium-based; same extension build.
+Browser,Safari,Extension (hands links to engine),Current versions,—,Mac App Store (Xcode packaging),v3.0,Needs separate Xcode-based packaging.
+Browser,Any modern browser,Web dashboard (client),Current versions,—,Served by the engine,v2.0,"Tablets, Chromebooks, locked-down work PCs."
+Cloud,Your servers,"Accounts, licensing, payments, encrypted relay, sync",—,—,Fly.io / Railway / Hetzner,v1.0,Downloads never pass through your servers.
