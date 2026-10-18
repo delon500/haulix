@@ -38,6 +38,8 @@ Read these before proposing features or architecture changes:
 - `docs/planning/features.csv`: every feature's version, tier and status. Update `Status` when a feature is started or finished.
 - `docs/adr/`: why things are built the way they are. When a decision changes, add or update an ADR.
 
+Features are referred to by ID, e.g. F-008, never by bare number, so they don't clash with GitHub issue numbers. IDs are the ID column in `docs/planning/features.csv`. Sheet row is only the original spreadsheet order; never use it to refer to a feature. `features.csv` is the source of truth; the xlsx files in `docs/private/` are historical snapshots and are never re-exported.
+
 `docs/private/` is git-ignored and holds pricing and business notes. Never copy its contents into public files, commits or code comments.
 
 ## Planned layout

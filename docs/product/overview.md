@@ -48,23 +48,23 @@ The first four drive the consumer product (v0.1 to v3.0). Lerato drives the busi
 
 13 of the 130 planned features are differentiators: things current download managers lack or do badly. They are what the product is sold on.
 
-| # | Differentiator | Why it matters | Release |
+| ID | Differentiator | Why it matters | Release |
 | --- | --- | --- | --- |
-| 8 | Clip downloads | Save just the part of a video you need | v0.1 |
-| 22 | No telemetry, open core | Trust, against adware-laden free tools | v0.1 |
-| 43 | Rules engine | Downloads file and name themselves | v0.5 |
-| 54 | Plain-language errors with one-click fixes | Non-technical users solve problems alone | v0.5 |
-| 59 | Local transcription | Speech in every video becomes text, offline | v1.0 |
-| 60 | Full-text search across downloads | Find anything said or written in your library | v1.0 |
-| 61 | Jump to the moment from search | Results open the video at the exact second | v1.0 |
-| 63 | Send from phone, download at home | Use home internet, not mobile data | v1.0 |
-| 79 | LAN sharing | Download once, share to every device in the house | v2.0 |
-| 81 | Metered connection detection | Never burn mobile data by accident | v2.0 |
-| 82 | Cost preview in your currency | See what a download costs before starting | v2.0 |
-| 87 | Polite mode | Steps aside for video calls and games automatically | v2.0 |
-| 90 | Outage schedule plugins | Plans downloads around scheduled power cuts | v2.0 |
+| F-008 | Clip downloads | Save just the part of a video you need | v0.1 |
+| F-022 | No telemetry, open core | Trust, against adware-laden free tools | v0.1 |
+| F-043 | Rules engine | Downloads file and name themselves | v0.5 |
+| F-054 | Plain-language errors with one-click fixes | Non-technical users solve problems alone | v0.5 |
+| F-059 | Local transcription | Speech in every video becomes text, offline | v1.0 |
+| F-060 | Full-text search across downloads | Find anything said or written in your library | v1.0 |
+| F-061 | Jump to the moment from search | Results open the video at the exact second | v1.0 |
+| F-063 | Send from phone, download at home | Use home internet, not mobile data | v1.0 |
+| F-079 | LAN sharing | Download once, share to every device in the house | v2.0 |
+| F-081 | Metered connection detection | Never burn mobile data by accident | v2.0 |
+| F-082 | Cost preview in your currency | See what a download costs before starting | v2.0 |
+| F-087 | Polite mode | Steps aside for video calls and games automatically | v2.0 |
+| F-090 | Outage schedule plugins | Plans downloads around scheduled power cuts | v2.0 |
 
-Numbers refer to the Feature Catalogue.
+IDs refer to the Feature Catalogue.
 
 ## How it works
 

@@ -1,10 +1,10 @@
 # Feature Catalogue — Later (unscheduled)
 
-These 6 features (124–129) are worth building but have no release yet. Each is a candidate for any version once user feedback shows demand; until then they stay out of scope. Promote one by moving it to a release file and updating its version in `docs/planning/features.csv`.
+These 6 features (F-124–F-129) are worth building but have no release yet. Each is a candidate for any version once user feedback shows demand; until then they stay out of scope. Promote one by moving it to a release file and updating its version in `docs/planning/features.csv`.
 
 ## Unscheduled features
 
-### 124. Dependency chains (download B after A)
+### F-124 Dependency chains (download B after A)
 
 **Queue and scheduling · Later · Pro**
 
@@ -21,7 +21,7 @@ These 6 features (124–129) are worth building but have no release yet. Each is
 - Dependencies are shown visually in the queue.
 - Circular dependencies (A waits for B, B waits for A) are prevented with a clear message.
 
-### 125. Speed tests and diagnostics
+### F-125 Speed tests and diagnostics
 
 **Network intelligence · Later · Free**
 
@@ -38,7 +38,7 @@ These 6 features (124–129) are worth building but have no release yet. Each is
 - Suggests a fix where possible (for example, more connections, a different mirror, or turning off a VPN).
 - A diagnostics report can be copied for support or bug reports, with personal details removed.
 
-### 126. Watch folders
+### F-126 Watch folders
 
 **Automation · Later · Pro**
 
@@ -55,7 +55,7 @@ These 6 features (124–129) are worth building but have no release yet. Each is
 - Processed files are moved to a subfolder or deleted, as chosen.
 - Files with no valid links are left in place, with a note in the log.
 
-### 127. Storage analytics and cleanup suggestions
+### F-127 Storage analytics and cleanup suggestions
 
 **Library management · Later · Pro**
 
@@ -68,11 +68,11 @@ These 6 features (124–129) are worth building but have no release yet. Each is
 **Acceptance criteria:**
 
 - Shows storage use by type, source site, age and size, in a clear chart.
-- Suggests cleanup categories: old installers, archives already extracted, duplicates (feature 49), watched media, partial downloads.
+- Suggests cleanup categories: old installers, archives already extracted, duplicates (feature F-049), watched media, partial downloads.
 - Every suggestion is reviewed before anything is deleted; nothing is deleted automatically.
 - Deleted files go to the system bin.
 
-### 128. Share links to downloaded files
+### F-128 Share links to downloaded files
 
 **Sharing and collaboration · Later · Pro**
 
@@ -88,9 +88,9 @@ These 6 features (124–129) are worth building but have no release yet. Each is
 - Options: expiry date, password, download limit, and revoke at any time.
 - Downloads through a share link are encrypted and resumable.
 - The owner sees when and how many times each link was used.
-- Respects central policies (feature 118) in business workspaces.
+- Respects central policies (feature F-118) in business workspaces.
 
-### 129. Password-protected or locked folders
+### F-129 Password-protected or locked folders
 
 **Security and privacy · Later · Pro**
 
