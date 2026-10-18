@@ -16,12 +16,6 @@ REST + WebSocket API. The project is pre-alpha and is being built up by hand.
 - When there's a real choice, give me the options and a recommendation instead of silently picking one.
 - If something contradicts the decisions below, point it out rather than working around it.
 
-## Environment
-
-- Windows, PowerShell. Project root: `D:\A Downloader Project\Haulix`.
-- Give commands in PowerShell syntax (e.g. `$env:RUST_LOG="debug"`, not `export`).
-- The path contains spaces: always quote paths.
-
 ## Decisions already made
 
 1. **Engine in Rust**, using Tokio (async) and Axum (local API).
